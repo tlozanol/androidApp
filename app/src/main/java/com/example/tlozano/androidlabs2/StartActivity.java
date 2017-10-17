@@ -30,7 +30,7 @@ public class StartActivity extends Activity {
             }
         });
 
-       /* Button buttonStartChat = findViewById(R.id.button3);
+       Button buttonStartChat = findViewById(R.id.button3);
         buttonStartChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -38,7 +38,7 @@ public class StartActivity extends Activity {
                 Intent intent = new Intent(StartActivity.this, ChatWindow.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
     }
 
