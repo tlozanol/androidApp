@@ -12,7 +12,8 @@ import com.example.asus.androidlabs.R;
 
 public class StartActivity extends Activity {
 
-    protected static final String ACTIVITY_NAME="StartActivity";
+    protected static final String ACTIVITY_NAME = "StartActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,22 +25,31 @@ public class StartActivity extends Activity {
         buttonStartListItems.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Log.i(ACTIVITY_NAME, "User clicked Start List Items");
+                Log.i(ACTIVITY_NAME, "-- User clicked Start List Items");
                 Intent intent = new Intent(StartActivity.this, ListItemsActivity.class);
                 startActivityForResult(intent, 10);
             }
         });
 
-       Button buttonStartChat = findViewById(R.id.button3);
+       Button buttonStartChat = findViewById(R.id.button2);
         buttonStartChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Log.i(ACTIVITY_NAME, "-- User clicked Start Chat");
                 Intent intent = new Intent(StartActivity.this, ChatWindow.class);
                 startActivity(intent);
             }
         });
 
+        Button buttonStarForecast = findViewById(R.id.button3);
+        buttonStarForecast.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.i(ACTIVITY_NAME, "-- User clicked Weather Forecast");
+                Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

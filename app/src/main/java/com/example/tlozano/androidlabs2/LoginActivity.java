@@ -25,7 +25,7 @@ public class LoginActivity extends Activity {
         button2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v){
-
+                Log.i(ACTIVITY_NAME, "-- login in");
                 saveInfo();
                 Intent intent = new Intent(LoginActivity.this, StartActivity.class);
                 startActivity(intent);

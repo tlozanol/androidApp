@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AndroidLabs</string>
+    <string name="hello_message">Hello World</string>
+    <string name="ButtonText">I\’m a button</string>
+    <string name="Login">Login</string>
+    <string name="Login_name">Login Name </string>
+    <string name="LoginB">Login</string>
+    <string name="Password">Password</string>
+    <string name="whatThisDo">What does this do?</string>
+    <string name="radio">RadioButton</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="dialog_message">Do you want to close?</string>
+    <string name="dialog_title">Closing activity</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="send_chat">Send</string>
+    <string name="start_forecast">Weather Forecast</string>
+    <string name="current">Current Temperature: </string>
+    <string name="min">Minimum Temperature: </string>
+    <string name="max">Maximum Temperature: </string>
+
+
+</resources>
